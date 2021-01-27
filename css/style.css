@@ -29,6 +29,10 @@ body{
     text-transform: uppercase;
 }
 
+.navigation-link:hover{
+    color: black;
+}
+
 .button{
     background: #4592FF;
     border-radius: 20px;
@@ -44,6 +48,10 @@ body{
     display: flex;
     align-items: center;    
     cursor: pointer;
+}
+
+.button:hover{
+    background: #006aff;
 }
 
 .button-icon, .button-price{
