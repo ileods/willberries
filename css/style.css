@@ -66,10 +66,15 @@ body{
 .slide{
     padding-top: 90px;
     padding-bottom: 110px;
+    min-height: 568px;
 }
 
 .slide-1{
     background: #B4D1E0 url('../img/slide-image-1.png') no-repeat top right;
+}
+
+.slide-2{
+    background: #e2d0d9 url('../img/slide-image-2.png') no-repeat top right;
 }
 
 .label{
@@ -109,6 +114,7 @@ body{
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
+    z-index: 9;
 }
 
 .slider-button{
@@ -117,8 +123,13 @@ body{
     cursor: pointer;
 }
 
+.slider-button:hover{
+    opacity: 0.8;
+}
+
 .card{
-    min-width: 370px;
+    min-width: 270px;
+    min-height: 370px ;
     border-radius: 10px;
     padding-top: 60px;
     padding-left: 46px;
@@ -147,9 +158,6 @@ body{
     padding-left: 25px;
     background: #FF4F52 url('../img/card-image-4.png') no-repeat top right;
     background-size: contain;
-    min-width: 0;
-    max-width: 272px;
-    height: 369.33px;
 }
 
 .card-title{
@@ -324,4 +332,34 @@ body{
     font-size: 14px;
     font-weight: 700;
     margin-right: 15px;
+}
+
+@media(max-width: 1200px) {
+    .slide-1, .card-3{
+        background-size:cover;
+    }
+
+}
+
+@media(max-width: 992px){
+    .slider-nav{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .slide-title{
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+
+    .card{
+        background-position: left top;
+        min-height: 300px;
+    }
+
+    .card-4{
+        background-position: right top;
+    }
 }
